@@ -1,0 +1,33 @@
+{
+  "name": "compare-linters",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "format": "prettier --write '*/**/*.{ts,css,md,json}'",
+    "lint:ts": "eslint --ext .ts src",
+    "start": "ts-node -r tsconfig-paths/register --files src/index.ts",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@code-quality/commitlint-config": "^1.1.0",
+    "@code-quality/eslint-config-jest": "^1.1.0",
+    "@code-quality/eslint-config-node": "^1.9.0",
+    "@code-quality/eslint-config-typescript": "^1.10.0",
+    "@code-quality/prettier-config": "^2.1.0",
+    "@commitlint/cli": "^8.3.5",
+    "@types/node": "^13.13.4",
+    "@types/ramda": "^0.27.4",
+    "eslint-config-prettier": "^6.11.0",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.1.7",
+    "prettier": "^2.0.5",
+    "ts-node": "^8.9.1",
+    "tsconfig-paths": "^3.9.0",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "json-diff": "^0.5.4",
+    "ramda": "^0.27.0"
+  }
+}
